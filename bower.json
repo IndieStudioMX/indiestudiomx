@@ -1,0 +1,8 @@
+{
+  "name": "IndieStudioMX",
+  "version": "0.0.1",
+  "description": "IndieStudio Website",
+  "dependencies": {
+    "bootstrap": "~3.3.1"
+  }
+}
