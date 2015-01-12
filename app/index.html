@@ -6,12 +6,14 @@
   <head>
    	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title></title>
+    <title>Ekcos</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- bower:css -->
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
     <!-- inject:css -->
+    <link rel="stylesheet" href="/stylesheets/main.css">
     <!-- endinject -->
   </head>
   <body>
@@ -19,11 +21,48 @@
     	<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <p>Hello Indie!</p>
+    <!-- Navbar -->
+    <div class="fluid-container">
+      <div class="row">
+        <h1 class="text-center">Próximamente</h1>
+      </div>
+      <div class="row">
+        <div class="about">
+          <hr>
+          <span>Mail. </span>
+          <a class="mail" href="mailto:hello@indiestudio.mx">hello@indiestudio.mx</a>
+          <p class="phone">Oficina. 3898-8638</p>
+          <address>
+            Av. Américas No. 425, Col. Ladrón de Guevara
+            Guadalajara, Jalisco
+          </address>
+        </div>
+        <div class="download">
+          <a class="download-icon" href="#">
+            <img src="images/icon-pdf.png">
+          </a>
+          <a class="download-btn" href="#">Descarga aquí nuestro brochure</a>
+        </div>
+      </div>
+    </div>
+    <!-- End Footer -->
+
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+  	</script>
   	<!-- bower:js -->
+  	<script src="lib/jquery/dist/jquery.js"></script>
+  	<script src="lib/bootstrap/dist/js/bootstrap.js"></script>
   	<!-- endbower -->
   	<!-- inject:js -->
+  	<script src="/scripts/main.js"></script>
   	<!-- endinject -->
 	</body>
 </html>
+

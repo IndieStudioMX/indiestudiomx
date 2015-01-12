@@ -1,0 +1,16 @@
+vendor(prop, val, prefixes = ())
+	for prefix in prefixes 
+		-{prefix}-{prop} val
+	{prop} val 
+
+smooting() 
+	-webkit-font-smoothing antialiased
+
+border-box() 
+	vendor('box-sizing', arguments, moz webkit ms)
+
+transform()
+	vendor('transform', arguments, webkit ms moz)
+
+transition()
+	vendor('transition', arguments, webkit ms moz)
