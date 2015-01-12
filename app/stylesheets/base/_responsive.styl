@@ -1,186 +1,505 @@
-$tiny   = 20em
-$small  = 30em
-$medium = 45em
-$large  = 60em
-$x-large= 80em
-
+$tiny     = 20em
+$small    = 30em
+$medium   = 45em
+$large    = 60em
+$x-large  = 80em
+$xx-large = 90em 
+$largest  = 100em
 
 @media screen and (min-width: $tiny)
   body 
-  	background-position 50% 44% 
-  	background-size 381%
-  hr 
-  	display none
-  h1 
-  	position relative
-  	top 8em
-  	font-size 2.5rem
+    /*background red*/
+    background-size 100% 849%
+  .row 
+    margin 0
+  .brand 
+    height 85%
+    width 100%
+    position absolute
+    left 0
+    right 0
+    top -19px
+    bottom 0
+    margin-top 0
+    z-index 2
+    a 
+      display block
+      width 100%
+      height 100%
+      img 
+        max-width 100%
+        width 100%
+        height 50%
+  h2 
+    top 35rem
+  .about, .download 
+    display inline-block
+    vertical-align top
+    width 48%
+    position relative
+    top 50rem
+  .download 
+    margin 0 auto
+    text-align right
+    bottom 0
+    width 100%
+    .download-btn
+      background url('../images/deg-download.png') no-repeat
+      background-size 100% 100%
+      background-position 0 0
+      width 110.5%
+      height 41px
+      line-height 23px
+      color $text-download-color 
+      font-size 1.4rem
+      color lighten($text-download, 10%) 
+      padding 1rem 7rem
+      font-family $font-family-bolditalic
+      position absolute
+      top 10rem
+      left -2rem 
+    .download-icon 
+      position absolute
+      left: 21rem;
+      top 5rem
+      img 
+        width 60%
+        left 7rem
+        position relative
   .about 
-  	width 60%
-  	top	28rem
-  	margin 0 auto 
-  	font-size 1.3rem
-  .download
-  	width 60%
-  	top 11rem
-  	font-size 1.2rem
-  	margin 0 auto
-  	a > img 
-  		width 12%  
+    color $text-color
+    position absolute
+    z-index 3
+    width 60%
+    left 25%
+    hr 
+      display none
+    span, .phone
+      font-family $font-family-bold
+      font-size 1.5rem
+    span 
+      display inline-block
+    .phone 
+      width 70%
+    a 
+      font-family $font-family-bold
+      color $text-color
+      font-size 1.5rem
+    address 
+      width 60%
+      font-size 1.2rem
+      color $text-color
+  
 
-@media screen and (min-width: $small )
+@media screen and (min-width: $small)
   body 
-  	background-position 50% 30% 
-  	background-size 350%
-  hr 
-  	display none
-  h1 
-  	position relative
-  	top 13.5em
-  	font-size 3.5rem
+    /*background green*/
+    background-size 100% 486%
+  .brand 
+    height 85%
+    width 100%
+    position absolute
+    left 0
+    right 0
+    top -19px
+    bottom 0
+    margin-top 0
+    z-index 2
+    a 
+      display block
+      width 100%
+      height 100%
+      img 
+        max-width 100%
+        min-height 70%
+        width 100%
+        height 60%
+  h2 
+    top 45rem
   .about 
-  	width 80%
-  	top	56rem
-  	margin 0 auto 
-  	font-size 1.7rem
-  .download
-  	width 80%
-  	top 38rem
-  	font-size 1.7rem
-  	line-height 1
-  	margin 0 auto
-  	a > img 
-  		width 40px  
-
+    color $text-color
+    left 1rem
+    position absolute
+    z-index 3
+    hr 
+      border-top 2px solid $line-color
+      width 60%
+      margin 0 0 1rem 0
+    span, .phone
+      font-family $font-family-bold
+      font-size 1.5rem
+    span 
+      display inline-block
+    .phone 
+      width 70%
+    a 
+      font-family $font-family-bold
+      color $text-color
+      font-size 1.5rem
+    address 
+      width 60%
+      font-size 1.2rem
+      color $text-color
+  .about, .download 
+    display inline-block
+    vertical-align top
+    width 48%
+    position relative
+    top 60rem
+    left 2rem
+  .download 
+    margin 0 auto
+    text-align right
+    top 58rem
+    left -6rem
+    .download-btn
+      background url('../images/btn-download.png') no-repeat
+      background-size 100% 122%
+      background-position 0 -6px
+      width 100%
+      height 41px
+      line-height 56px
+      color $text-download-color 
+      font-size 1.2rem
+      color lighten($text-download, 10%) 
+      padding 2rem 1.6rem
+      font-family $font-family-bolditalic
+      position relative
+      top 5rem
+      left 8rem 
+    .download-icon 
+      position absolute
+      left: 17rem;
+      top 0
+      img 
+        width 60%
+        left 7rem
+        position relative
+    
 @media screen and (min-width: $medium)
   body 
-  	background-position 50% 45% 
-  	background-size 180%
-  hr 
-  	display none
-  h1 
-  	top 31rem
-  	font-size 4rem
-  .about, .download 
-  	display inline-block
-  	vertical-align middle
-  	width 50%
+    /*background blue*/
+    background-size 100% 600%
+  .brand 
+    height 85%
+    width 100%
+    position absolute
+    left 0
+    right 0
+    top -19px
+    bottom 0
+    margin-top 0
+    z-index 2
+    a 
+      display block
+      width 100%
+      height 100%
+      img 
+        max-width 100%
+        min-height 100%
+        width 100%
+        height 100%
+  h2 
+    top 61rem
   .about 
-  	width 35%
-  	height auto
-  	margin 1rem auto 1rem auto
-  	top 35rem
-  	left 0
-  	margin-left 7em
-  	font-size 1.5rem
-  .download 
-  	width 40%
-  	top 34rem
-  	height 110px
-  	font-size 1.5rem
-  	margin-left 11rem
-  	a > img 
-  		width 30px
- 
-@media screen and (min-width: $large)
-  body 
-  	background-position 50% 35% 
-  	background-size 158%
-  hr 
-  	display none
-  h1 
-  	top 8em
+    color $text-color
+    left 1rem
+    position absolute
+    z-index 3
+    hr 
+      border-top 2px solid $line-color
+      width 60%
+      margin 0 0 1rem 0
+    span, .phone
+      font-family $font-family-bold
+      font-size 1.5rem
+    span 
+      display inline-block
+    .phone 
+      width 70%
+    a 
+      font-family $font-family-bold
+      color $text-color
+      font-size 1.5rem
+    address 
+      width 40%
+      font-size 1.2rem
+      color $text-color
   .about, .download 
-  	display inline-block
-  	vertical-align middle 
-  	top 22em
-  	left 1em
-  	font-size 1.2em
-  	width 50% !important
-  	margin 0
-  .about 
-  	width 35% !important
+    display inline-block
+    vertical-align top
+    width 48%
+    position relative
+    top 69rem
+    left 2rem
   .download 
-  	width 316px !important
-  	font-size 1.35em
-  	top 25em
-  	position absolute
-  	left 34em
-  	.download-icon
-  		img 
-  			width 9%
-  	.download-btn 
-  		display block
-  		height 55px
-  		width 82%
-  		background url('../images/btn-download.png') 
-  		background-repeat no-repeat
-  		margin-top 0rem
-  		background-size 100% 114%
-  		background-position -3px -2px
-  		color lighten($text-download-color, 60%)
-  		text-indent 2em
-  		line-height 66px
-  		font-size 1.5rem 
-  		position relative
-  		left 5rem
-  		top -5rem
- 
+    margin 0 auto
+    text-align right
+    top 68rem
+    left -6rem
+    .download-btn
+      background url('../images/btn-download.png') no-repeat
+      background-size 100% 122%
+      background-position 0 -6px
+      width 100%
+      height 41px
+      line-height 56px
+      color $text-download-color 
+      font-size 1.4rem
+      color lighten($text-download, 10%) 
+      padding 2rem 3rem
+      font-family $font-family-bolditalic
+      position relative
+      top 5rem
+      left 8rem 
+    .download-icon 
+      position absolute
+      left: 30rem;
+      img 
+        width 60%
+        left 7rem
+        position relative
+    
 @media screen and (min-width: $x-large)
   body 
-  	background-position 0 -106px
-  	background-size 100%
-  h1 
-  	font-size 3.6rem
-  	top	11em
-  hr 
-  	display block
-  	background rgb(113,113,113)
-  	width 100%
-  	border-top 2px solid 
-  	margin 0
+    /*background cyan */
+    background-size 100% 600%
+  .brand 
+    height 100%
+    width 100%
+    position absolute
+    left 0
+    right 0
+    top -19px
+    bottom 0
+    margin-top 0
+    z-index 2
+    a 
+      display block
+      width 100%
+      height 100%
+      img 
+        max-width 100%
+        min-height 100%
+        width 100%
+        height 100%
+  h2 
+    top 61rem
   .about 
-  	display block
-  	width 20% !important
-  	top 30em
-  	left 2em
-  	font-size 1.5rem
-  	span 
-  		font-family $font-family-bold
-  	a, p 
-  		color black
-  		font-family $font-family-bold
-  	address 
-  		font-size 0.9em
-  		margin-top -.8em
-  		font-family $font-family-regular
+    color $text-color
+    left -2rem
+    position absolute
+    z-index 3
+    hr 
+      border-top 2px solid $line-color
+      width 50%
+      margin 0 0 1rem 0
+    span, .phone
+      font-family $font-family-bold
+      font-size 1.5rem
+    span 
+      display inline-block
+    .phone 
+      width 70%
+    a 
+      font-family $font-family-bold
+      color $text-color
+      font-size 1.5rem
+    address 
+      width 50%
+      font-size 1.2rem
+      color $text-color
+  .about, .download 
+    display inline-block
+    vertical-align top
+    width 48%
+    position relative
+    top 69rem
+    left -2rem
   .download 
-  	left 64%
-  	top 54rem
-  	top 20rem
-    .download-btn 
-  		display block
-  		height 55px
-  		width 82%
-  		background url('../images/btn-download.png') 
-  		background-repeat no-repeat
-  		margin-top 2rem
-  		background-size 100% 114%
-  		background-position -3px -2px
-  		color lighten($text-download-color, 60%)
-  		text-indent 2em
-  		line-height 66px
-  		font-size 1.5rem 
-  		position relative
-      left 22rem
-      top 1rem
-  	.download-icon 
-  		width 93%
-  		display block
-  		text-align right 
-  		position relative 
-  		top -5rem
-  		left 0
-  		img 
-  			width 11%
-  	
+    margin 0 auto
+    text-align right
+    .download-btn
+      background url('../images/btn-download.png') no-repeat
+      background-size 100% 122%
+      background-position 0 -6px
+      width 100%
+      height 41px
+      line-height 56px
+      color $text-download-color 
+      font-size 1.4rem
+      color lighten($text-download, 10%) 
+      padding 2rem 3rem
+      font-family $font-family-bolditalic
+      position relative
+      top 5rem
+      left 8rem 
+    .download-icon 
+      position absolute
+      left: 51rem;
+      img 
+        width 60%
+        left 7rem
+        position relative
+    
+@media screen and (min-width: $xx-large)
+  body 
+    /*background yellow */
+  .brand 
+    height 100%
+    width 100%
+    position absolute
+    left 0
+    right 0
+    top -19px
+    bottom 0
+    margin-top 0
+    z-index 2
+    a 
+      display block
+      width 100%
+      height 100%
+      img 
+        max-width 100%
+        min-height 100%
+        width 100%
+        height 100%
+  h2 
+    top 60rem
+  .about 
+    color $text-color
+    left -2rem
+    position absolute
+    z-index 3
+    hr 
+      border-top 2px solid $line-color
+      width 50%
+      margin 0 0 1rem 0
+    span, .phone
+      font-family $font-family-bold
+      font-size 1.5rem
+    span 
+      display inline-block
+    .phone 
+      width 70%
+    a 
+      font-family $font-family-bold
+      color $text-color
+      font-size 1.5rem
+    address 
+      width 50%
+      font-size 1.2rem
+      color $text-color
+  .about, .download 
+    display inline-block
+    vertical-align top
+    width 48%
+    position relative
+    top 69rem
+    left -2rem
+  .download 
+    margin 0 auto
+    text-align right
+    .download-btn
+      background url('../images/btn-download.png') no-repeat
+      background-size 100% 122%
+      background-position 0 -6px
+      width 100%
+      height 41px
+      line-height 56px
+      color $text-download-color 
+      font-size 1.4rem
+      color lighten($text-download, 10%) 
+      padding 2rem 3rem
+      font-family $font-family-bolditalic
+      position relative
+      top 5rem
+      left 8rem 
+    .download-icon 
+      position absolute
+      left: 51rem;
+      img 
+        width 60%
+        left 7rem
+        position relative
+    
+@media screen and (min-width: $largest)
+  /*body 
+    background pink*/
+  .brand 
+    height 100%
+    width 100%
+    position absolute
+    left 0
+    right 0
+    top -19px
+    bottom 0
+    margin-top 0
+    z-index 2
+    a 
+      display block
+      width 100%
+      height 100%
+      img 
+        max-width 100%
+        min-height 100%
+        width 100%
+        height 100%
+  h2 
+    top 60rem
+  .about 
+    color $text-color
+    left -2rem
+    position absolute
+    z-index 3
+    hr 
+      border-top 2px solid $line-color
+      width 50%
+      margin 0 0 1rem 0
+    span, .phone
+      font-family $font-family-bold
+      font-size 1.5rem
+    span 
+      display inline-block
+    .phone 
+      width 70%
+    a 
+      font-family $font-family-bold
+      color $text-color
+      font-size 1.5rem
+    address 
+      width 50%
+      font-size 1.2rem
+      color $text-color
+  .about, .download 
+    display inline-block
+    vertical-align top
+    width 48%
+    position relative
+    top 69rem
+    left -2rem
+  .download 
+    margin 0 auto
+    text-align right
+    .download-btn
+      background url('../images/btn-download.png') no-repeat
+      background-size 100% 122%
+      background-position 0 -6px
+      width 100%
+      height 41px
+      line-height 56px
+      color $text-download-color 
+      font-size 1.4rem
+      color lighten($text-download, 10%) 
+      padding 2rem 3rem
+      font-family $font-family-bolditalic
+      position relative
+      top 5rem
+      left 8rem 
+    .download-icon 
+      position absolute
+      left: 51rem;
+      img 
+        width 60%
+        left 7rem
+        position relative

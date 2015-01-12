@@ -19,6 +19,13 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'gandhi-BoldItalic';
+  src: url("../fonts/GandhiSans-BoldItalic-webfontt.eot");
+  src: url("../fonts/GandhiSans-BoldItalic-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/GandhiSans-BoldItalic-webfont.woff2") format('woff2'), url("../fonts/GandhiSans-BoldItalic-webfont.woff") format('woff'), url("../fonts/GandhiSans-BoldItalic-webfont.ttf") format('truetype'), url("../fonts/GandhiSans-BoldItalic-webfont.svg#gandhi") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   font-family: 'gandhi';
   background: #fafafa url("../images/bg.png") no-repeat;
@@ -34,233 +41,615 @@ body {
   -ms-box-sizing: ;
   box-sizing: ;
 }
-h1 {
+h2 {
   font-family: 'gandhi-italic';
   color: #7a5f2c;
-}
-.row {
-  margin: 0;
-}
-.about,
-.download {
   position: relative;
+  top: 54rem;
 }
 @media screen and (min-width: 20em) {
   body {
-    background-position: 50% 44%;
-    background-size: 381%;
+/*background red*/
+    background-size: 100% 849%;
   }
-  hr {
-    display: none;
+  .row {
+    margin: 0;
   }
-  h1 {
+  .brand {
+    height: 85%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -19px;
+    bottom: 0;
+    margin-top: 0;
+    z-index: 2;
+  }
+  .brand a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .brand a img {
+    max-width: 100%;
+    width: 100%;
+    height: 50%;
+  }
+  h2 {
+    top: 35rem;
+  }
+  .about,
+  .download {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
     position: relative;
-    top: 8em;
-    font-size: 2.5rem;
-  }
-  .about {
-    width: 60%;
-    top: 28rem;
-    margin: 0 auto;
-    font-size: 1.3rem;
+    top: 50rem;
   }
   .download {
-    width: 60%;
-    top: 11rem;
-    font-size: 1.2rem;
     margin: 0 auto;
+    text-align: right;
+    bottom: 0;
+    width: 100%;
   }
-  .download a > img {
-    width: 12%;
+  .download .download-btn {
+    background: url("../images/deg-download.png") no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0;
+    width: 110.5%;
+    height: 41px;
+    line-height: 23px;
+    color: #9f9990;
+    font-size: 1.4rem;
+    color: #d0d0cf;
+    padding: 1rem 7rem;
+    font-family: 'gandhi-BoldItalic';
+    position: absolute;
+    top: 10rem;
+    left: -2rem;
+  }
+  .download .download-icon {
+    position: absolute;
+    left: 21rem;
+    top: 5rem;
+  }
+  .download .download-icon img {
+    width: 60%;
+    left: 7rem;
+    position: relative;
+  }
+  .about {
+    color: #202020;
+    position: absolute;
+    z-index: 3;
+    width: 60%;
+    left: 25%;
+  }
+  .about hr {
+    display: none;
+  }
+  .about span,
+  .about .phone {
+    font-family: 'gandhi-bold';
+    font-size: 1.5rem;
+  }
+  .about span {
+    display: inline-block;
+  }
+  .about .phone {
+    width: 70%;
+  }
+  .about a {
+    font-family: 'gandhi-bold';
+    color: #202020;
+    font-size: 1.5rem;
+  }
+  .about address {
+    width: 60%;
+    font-size: 1.2rem;
+    color: #202020;
   }
 }
 @media screen and (min-width: 30em) {
   body {
-    background-position: 50% 30%;
-    background-size: 350%;
+/*background green*/
+    background-size: 100% 486%;
   }
-  hr {
-    display: none;
+  .brand {
+    height: 85%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -19px;
+    bottom: 0;
+    margin-top: 0;
+    z-index: 2;
   }
-  h1 {
-    position: relative;
-    top: 13.5em;
-    font-size: 3.5rem;
+  .brand a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .brand a img {
+    max-width: 100%;
+    min-height: 70%;
+    width: 100%;
+    height: 60%;
+  }
+  h2 {
+    top: 45rem;
   }
   .about {
-    width: 80%;
-    top: 56rem;
-    margin: 0 auto;
-    font-size: 1.7rem;
+    color: #202020;
+    left: 1rem;
+    position: absolute;
+    z-index: 3;
+  }
+  .about hr {
+    border-top: 2px solid #6c6c6c;
+    width: 60%;
+    margin: 0 0 1rem 0;
+  }
+  .about span,
+  .about .phone {
+    font-family: 'gandhi-bold';
+    font-size: 1.5rem;
+  }
+  .about span {
+    display: inline-block;
+  }
+  .about .phone {
+    width: 70%;
+  }
+  .about a {
+    font-family: 'gandhi-bold';
+    color: #202020;
+    font-size: 1.5rem;
+  }
+  .about address {
+    width: 60%;
+    font-size: 1.2rem;
+    color: #202020;
+  }
+  .about,
+  .download {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    position: relative;
+    top: 60rem;
+    left: 2rem;
   }
   .download {
-    width: 80%;
-    top: 38rem;
-    font-size: 1.7rem;
-    line-height: 1;
     margin: 0 auto;
+    text-align: right;
+    top: 58rem;
+    left: -6rem;
   }
-  .download a > img {
-    width: 40px;
+  .download .download-btn {
+    background: url("../images/btn-download.png") no-repeat;
+    background-size: 100% 122%;
+    background-position: 0 -6px;
+    width: 100%;
+    height: 41px;
+    line-height: 56px;
+    color: #9f9990;
+    font-size: 1.2rem;
+    color: #d0d0cf;
+    padding: 2rem 1.6rem;
+    font-family: 'gandhi-BoldItalic';
+    position: relative;
+    top: 5rem;
+    left: 8rem;
+  }
+  .download .download-icon {
+    position: absolute;
+    left: 17rem;
+    top: 0;
+  }
+  .download .download-icon img {
+    width: 60%;
+    left: 7rem;
+    position: relative;
   }
 }
 @media screen and (min-width: 45em) {
   body {
-    background-position: 50% 45%;
-    background-size: 180%;
+/*background blue*/
+    background-size: 100% 600%;
   }
-  hr {
-    display: none;
-  }
-  h1 {
-    top: 31rem;
-    font-size: 4rem;
-  }
-  .about,
-  .download {
-    display: inline-block;
-    vertical-align: middle;
-    width: 50%;
-  }
-  .about {
-    width: 35%;
-    height: auto;
-    margin: 1rem auto 1rem auto;
-    top: 35rem;
-    left: 0;
-    margin-left: 7em;
-    font-size: 1.5rem;
-  }
-  .download {
-    width: 40%;
-    top: 34rem;
-    height: 110px;
-    font-size: 1.5rem;
-    margin-left: 11rem;
-  }
-  .download a > img {
-    width: 30px;
-  }
-}
-@media screen and (min-width: 60em) {
-  body {
-    background-position: 50% 35%;
-    background-size: 158%;
-  }
-  hr {
-    display: none;
-  }
-  h1 {
-    top: 8em;
-  }
-  .about,
-  .download {
-    display: inline-block;
-    vertical-align: middle;
-    top: 22em;
-    left: 1em;
-    font-size: 1.2em;
-    width: 50% !important;
-    margin: 0;
-  }
-  .about {
-    width: 35% !important;
-  }
-  .download {
-    width: 316px !important;
-    font-size: 1.35em;
-    top: 25em;
+  .brand {
+    height: 85%;
+    width: 100%;
     position: absolute;
-    left: 34em;
+    left: 0;
+    right: 0;
+    top: -19px;
+    bottom: 0;
+    margin-top: 0;
+    z-index: 2;
   }
-  .download .download-icon img {
-    width: 9%;
+  .brand a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .brand a img {
+    max-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+  }
+  h2 {
+    top: 61rem;
+  }
+  .about {
+    color: #202020;
+    left: 1rem;
+    position: absolute;
+    z-index: 3;
+  }
+  .about hr {
+    border-top: 2px solid #6c6c6c;
+    width: 60%;
+    margin: 0 0 1rem 0;
+  }
+  .about span,
+  .about .phone {
+    font-family: 'gandhi-bold';
+    font-size: 1.5rem;
+  }
+  .about span {
+    display: inline-block;
+  }
+  .about .phone {
+    width: 70%;
+  }
+  .about a {
+    font-family: 'gandhi-bold';
+    color: #202020;
+    font-size: 1.5rem;
+  }
+  .about address {
+    width: 40%;
+    font-size: 1.2rem;
+    color: #202020;
+  }
+  .about,
+  .download {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    position: relative;
+    top: 69rem;
+    left: 2rem;
+  }
+  .download {
+    margin: 0 auto;
+    text-align: right;
+    top: 68rem;
+    left: -6rem;
   }
   .download .download-btn {
-    display: block;
-    height: 55px;
-    width: 82%;
-    background: url("../images/btn-download.png");
-    background-repeat: no-repeat;
-    margin-top: 0rem;
-    background-size: 100% 114%;
-    background-position: -3px -2px;
-    color: #d9d6d3;
-    text-indent: 2em;
-    line-height: 66px;
-    font-size: 1.5rem;
+    background: url("../images/btn-download.png") no-repeat;
+    background-size: 100% 122%;
+    background-position: 0 -6px;
+    width: 100%;
+    height: 41px;
+    line-height: 56px;
+    color: #9f9990;
+    font-size: 1.4rem;
+    color: #d0d0cf;
+    padding: 2rem 3rem;
+    font-family: 'gandhi-BoldItalic';
     position: relative;
-    left: 5rem;
-    top: -5rem;
+    top: 5rem;
+    left: 8rem;
+  }
+  .download .download-icon {
+    position: absolute;
+    left: 30rem;
+  }
+  .download .download-icon img {
+    width: 60%;
+    left: 7rem;
+    position: relative;
   }
 }
 @media screen and (min-width: 80em) {
   body {
-    background-position: 0 -106px;
-    background-size: 100%;
+/*background cyan */
+    background-size: 100% 600%;
   }
-  h1 {
-    font-size: 3.6rem;
-    top: 11em;
-  }
-  hr {
-    display: block;
-    background: #717171;
+  .brand {
+    height: 100%;
     width: 100%;
-    border-top: 2px solid;
-    margin: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -19px;
+    bottom: 0;
+    margin-top: 0;
+    z-index: 2;
+  }
+  .brand a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .brand a img {
+    max-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+  }
+  h2 {
+    top: 61rem;
   }
   .about {
-    display: block;
-    width: 20% !important;
-    top: 30em;
-    left: 2em;
+    color: #202020;
+    left: -2rem;
+    position: absolute;
+    z-index: 3;
+  }
+  .about hr {
+    border-top: 2px solid #6c6c6c;
+    width: 50%;
+    margin: 0 0 1rem 0;
+  }
+  .about span,
+  .about .phone {
+    font-family: 'gandhi-bold';
     font-size: 1.5rem;
   }
   .about span {
-    font-family: 'gandhi-bold';
+    display: inline-block;
   }
-  .about a,
-  .about p {
-    color: #000;
+  .about .phone {
+    width: 70%;
+  }
+  .about a {
     font-family: 'gandhi-bold';
+    color: #202020;
+    font-size: 1.5rem;
   }
   .about address {
-    font-size: 0.9em;
-    margin-top: -0.8em;
-    font-family: 'gandhi';
+    width: 50%;
+    font-size: 1.2rem;
+    color: #202020;
+  }
+  .about,
+  .download {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    position: relative;
+    top: 69rem;
+    left: -2rem;
   }
   .download {
-    left: 64%;
-    top: 54rem;
+    margin: 0 auto;
+    text-align: right;
   }
-  .download top 20rem .download-btn,
-  .download top 20rem display block,
-  .download top 20rem height 55px,
-  .download top 20rem width 82%,
-  .download top 20rem background url('../images/btn-download.png'),
-  .download top 20rem background-repeat no-repeat,
-  .download top 20rem margin-top 2rem,
-  .download top 20rem background-size 100% 114%,
-  .download top 20rem background-position -3px -2px,
-  .download top 20rem color lighten($text-download-color,
-  .download top 20rem 60%),
-  .download top 20rem text-indent 2em,
-  .download top 20rem line-height 66px,
-  .download top 20rem font-size 1.5rem,
-  .download top 20rem position relative {
-    left: 22rem;
-    top: 1rem;
+  .download .download-btn {
+    background: url("../images/btn-download.png") no-repeat;
+    background-size: 100% 122%;
+    background-position: 0 -6px;
+    width: 100%;
+    height: 41px;
+    line-height: 56px;
+    color: #9f9990;
+    font-size: 1.4rem;
+    color: #d0d0cf;
+    padding: 2rem 3rem;
+    font-family: 'gandhi-BoldItalic';
+    position: relative;
+    top: 5rem;
+    left: 8rem;
   }
   .download .download-icon {
-    width: 93%;
-    display: block;
-    text-align: right;
-    position: relative;
-    top: -5rem;
-    left: 0;
+    position: absolute;
+    left: 51rem;
   }
   .download .download-icon img {
-    width: 11%;
+    width: 60%;
+    left: 7rem;
+    position: relative;
+  }
+}
+@media screen and (min-width: 90em) {
+  .brand {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -19px;
+    bottom: 0;
+    margin-top: 0;
+    z-index: 2;
+  }
+  .brand a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .brand a img {
+    max-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+  }
+  h2 {
+    top: 60rem;
+  }
+  .about {
+    color: #202020;
+    left: -2rem;
+    position: absolute;
+    z-index: 3;
+  }
+  .about hr {
+    border-top: 2px solid #6c6c6c;
+    width: 50%;
+    margin: 0 0 1rem 0;
+  }
+  .about span,
+  .about .phone {
+    font-family: 'gandhi-bold';
+    font-size: 1.5rem;
+  }
+  .about span {
+    display: inline-block;
+  }
+  .about .phone {
+    width: 70%;
+  }
+  .about a {
+    font-family: 'gandhi-bold';
+    color: #202020;
+    font-size: 1.5rem;
+  }
+  .about address {
+    width: 50%;
+    font-size: 1.2rem;
+    color: #202020;
+  }
+  .about,
+  .download {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    position: relative;
+    top: 69rem;
+    left: -2rem;
+  }
+  .download {
+    margin: 0 auto;
+    text-align: right;
+  }
+  .download .download-btn {
+    background: url("../images/btn-download.png") no-repeat;
+    background-size: 100% 122%;
+    background-position: 0 -6px;
+    width: 100%;
+    height: 41px;
+    line-height: 56px;
+    color: #9f9990;
+    font-size: 1.4rem;
+    color: #d0d0cf;
+    padding: 2rem 3rem;
+    font-family: 'gandhi-BoldItalic';
+    position: relative;
+    top: 5rem;
+    left: 8rem;
+  }
+  .download .download-icon {
+    position: absolute;
+    left: 51rem;
+  }
+  .download .download-icon img {
+    width: 60%;
+    left: 7rem;
+    position: relative;
+  }
+}
+@media screen and (min-width: 100em) {
+  .brand {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -19px;
+    bottom: 0;
+    margin-top: 0;
+    z-index: 2;
+  }
+  .brand a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .brand a img {
+    max-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+  }
+  h2 {
+    top: 60rem;
+  }
+  .about {
+    color: #202020;
+    left: -2rem;
+    position: absolute;
+    z-index: 3;
+  }
+  .about hr {
+    border-top: 2px solid #6c6c6c;
+    width: 50%;
+    margin: 0 0 1rem 0;
+  }
+  .about span,
+  .about .phone {
+    font-family: 'gandhi-bold';
+    font-size: 1.5rem;
+  }
+  .about span {
+    display: inline-block;
+  }
+  .about .phone {
+    width: 70%;
+  }
+  .about a {
+    font-family: 'gandhi-bold';
+    color: #202020;
+    font-size: 1.5rem;
+  }
+  .about address {
+    width: 50%;
+    font-size: 1.2rem;
+    color: #202020;
+  }
+  .about,
+  .download {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    position: relative;
+    top: 69rem;
+    left: -2rem;
+  }
+  .download {
+    margin: 0 auto;
+    text-align: right;
+  }
+  .download .download-btn {
+    background: url("../images/btn-download.png") no-repeat;
+    background-size: 100% 122%;
+    background-position: 0 -6px;
+    width: 100%;
+    height: 41px;
+    line-height: 56px;
+    color: #9f9990;
+    font-size: 1.4rem;
+    color: #d0d0cf;
+    padding: 2rem 3rem;
+    font-family: 'gandhi-BoldItalic';
+    position: relative;
+    top: 5rem;
+    left: 8rem;
+  }
+  .download .download-icon {
+    position: absolute;
+    left: 51rem;
+  }
+  .download .download-icon img {
+    width: 60%;
+    left: 7rem;
+    position: relative;
   }
 }
